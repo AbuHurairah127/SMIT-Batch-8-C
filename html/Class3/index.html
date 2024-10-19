@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>Class3</title>
+  </head>
+  <body>
+    <table border="">
+      <thead>
+        <tr>
+          <th colspan="2">Table Tag</th>
+          <th rowspan="2">Row Span</th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Phone No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Abu Hurairah</td>
+          <td>21</td>
+          <td>+923207443537</td>
+        </tr>
+        <tr>
+          <td>Naveed Sarwar</td>
+          <td>29</td>
+          <td>+923000....</td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="">
+      <tbody>
+        <tr>
+          <td rowspan="2">Abc</td>
+          <td rowspan="3">Def</td>
+          <td>Ghi</td>
+          <td>Jkl</td>
+        </tr>
+        <tr>
+          <td colspan="2">Mno</td>
+        </tr>
+        <tr>
+          <td>Xyz</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <form>
+      <fieldset>
+        <legend>User Inputs</legend>
+        <label for="no.">Name</label>
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          required
+          minlength="3"
+          maxlength="5"
+          value="Abu Hurairah"
+        />
+        <input type="search" placeholder="Search" />
+        <input type="password" />
+        <input type="number" id="no." min="10" max="15" />
+      </fieldset>
+      <fieldset>
+        <legend>Date & Time</legend>
+        <input type="date" />
+        <input type="time" />
+      </fieldset>
+      <fieldset>
+        <legend>Extra</legend>
+        <input type="color" />
+        <input type="file" />
+      </fieldset>
+      <input type="radio" name="gender" id="male" checked />
+      <label for="female">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="male">Female</label>
+      <br />
+      <input type="checkbox" name="city" id="isb" /><label for="isb"
+        >Islamabad</label
+      >
+      <input type="checkbox" name="city" /><span>Lahore</span>
+      <input type="checkbox" name="city" /><span>Karachi</span>
+      <input type="checkbox" name="city" /><span>Faisalabad</span>
+
+      <select name="city" id="city" required>
+        <option value="">Select your city</option>
+        <option value="isb" disabled>Islamabad</option>
+        <option value="lhr">Lahore</option>
+        <option value="fsd">Faisalabad</option>
+        <option value="khi">Karachi</option>
+      </select>
+      <textarea name="" id="" rows="15" cols="50"></textarea>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <video src="./sam.mp4" width="320" controls></video>
+    <div>
+      <p style="font-size: 32px; color: red">My name is Abu Hurairah</p>
+      <p>I'm 21 years old</p>
+    </div>
+    <p>Naveed Sarwer</p>
+    <div style="width: 100px; height: 100px; background: green">
+      dljafkldjflkaj slkdfjakljlkjad skljlfk
+    </div>
+  </body>
+</html>
