@@ -1,0 +1,31 @@
+div {
+    width: 200px;
+    height: 200px;
+    background: red ;
+    
+  }
+ 
+
+#first {
+    background-color: aqua;
+}
+
+.red{
+    background-color: navy;
+}
+p{
+    color: red;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: black;
+    /* text-decoration-thickness: 15px; */
+    text-decoration-style: wavy;
+    text-align: center;
+    text-transform: capitalize;
+    text-indent: 300px;
+    background-color: aquamarine;
+
+}
