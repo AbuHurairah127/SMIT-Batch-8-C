@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.box {
+    /* background: linear-gradient(90deg,rgba(0,0,255,1),rgba(0,0,0,0),rgba(0,0,0,0)); */
+    /* background: radial-gradient(blue, red, green); */
+    height: 200px;
+    width: 200px;
+    /* border-color: #00ff00;
+    border-style: solid;
+    border-width: 10px; */
+    /* border: red solid 5px; */
+    border: red double 10px;
+    border-radius: 100px 0px 50px 20px;
+    /* transform: rotate(45deg)  translateX(100px); */
+    margin: 20px;
+}
+span{
+    background-color: rgb(255,255,255);
+    width: 100px;
+
+}
+/* h1{
+    background-color: #00ff00;
+    width: 100px;
+    border-radius: 10px;
+} */
+img{
+    width: 400px;
+    height: 200px;
+    border-radius: 100px;
+}
+.box-model{
+    border-color: rgba(76, 0, 130, 0.597);
+    border-style: solid;
+    border-width: 5px;
+    /* padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 15px; */
+    padding: 30px 20px 10px;
+}
+
+
+/* 
+ Padding - 2 Value = > Y-axis X-axis
+ Padding - Single Value => all Side
+ Padding - 4 Vlues => Top Right Bottom Left
+*/
+
+.submit{
+    background-color: rgb(9, 174, 9);
+    color: white;
+    padding:5px 30px;
+    border: none;
+    margin:10px;
+}
+
+.delete {
+    background-color: rgb(174, 9, 9);
+    color: white;
+    padding:5px 30px;
+    border: none;
+    margin:10px;
+}
