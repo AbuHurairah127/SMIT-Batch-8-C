@@ -1,0 +1,56 @@
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px auto 50px; /* Header, content, footer */
+  grid-template-columns: 200px 1fr; /* Sidebar, content */
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content"
+    "footer footer";
+  /* gap: 20px; Gap between all grid items */
+  /* justify-items: stretch; Stretch grid items horizontally */
+  /* align-items: stretch; Stretch grid items vertically */
+  /* justify-content: space-between; Align grid within the container horizontally */
+  /* align-content: space-between; Align grid within the container vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Grid Items */
+.header {
+  grid-area: header;
+  /* justify-self: end; */
+  align-self: center;
+  background-color: #f8b400;
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #6ab04c;
+  justify-self: start; /* Align to the start horizontally */
+  align-self: stretch; /* Stretch vertically */
+  padding: 10px;
+}
+
+.content {
+  grid-area: content;
+  background-color: #22a6b3;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(100px, 1fr)); /* Nested grid */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #be2edd;
+  text-align: center;
+  padding: 10px;
+  justify-self: stretch;
+  align-self: end; /* Align content to the bottom */
+}
