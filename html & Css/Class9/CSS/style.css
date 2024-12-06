@@ -1,0 +1,49 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: colorChange;
+  animation-duration: 5s;
+  /* animation-delay: 1s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: alternate-reverse;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+    border-radius: 0px;
+  }
+  /* 50% {
+    background-color: green;
+    transform: scaleX(5);
+  } */
+  100% {
+    background-color: yellow;
+  }
+}
+
+/* .container p {
+  color: blue;
+} */
+
+li:nth-child(3n) {
+  color: red;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  background-blend-mode: difference;
+  background-color: blue;
+}
+
+.image {
+  background-blend-mode: difference;
+  background-color: blue;
+}
+
+.padding-x-5 {
+  padding: 50px;
+}
