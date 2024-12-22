@@ -1,3 +1,4 @@
+type FuncType = (_num1: number, _num2: number) => number;
 // Functions
 console.log("Abu Hurairah");
 console.log("Waseem");
@@ -71,9 +72,6 @@ function sum2(num1: number, num2: number) {
 // sum2(410, 5);
 
 // Default Parametes
-function names(lastName: string, firstName: string = "Muhammad") {
-  console.log(firstName, lastName);
-}
 
 // names("Ali");
 // names("Ali", "Ahmad");
@@ -105,3 +103,58 @@ console.log(str2);
 console.log(str2.trim());
 console.log(str2);
 console.log(_name.replace("ABU", "MUHAMMAD"));
+
+function names(lastName: string, firstName: string = "Muhammad") {
+  console.log(firstName, lastName);
+}
+
+var response = names("Ali");
+console.log("🚀 ~ response:", response);
+
+// return statement
+
+console.log(names3("Abu hurairah"));
+
+function names3(_name: string): string {
+  return `Muhammad ${_name}`;
+}
+
+var response2 = names3("Ahmad");
+console.log(names3("Waseem"));
+
+var resp1 = names3("Ali");
+console.log(resp1);
+var resp2 = names3(resp1); // Muhammad Ali => Muhammad Muhammad Ali
+console.log(resp1, "||", resp2);
+
+console.log(names3(names3("Ali")));
+
+const arrowFunction = () => {
+  console.log("Anonymus function");
+};
+
+arrowFunction();
+
+const sum: FuncType = (_num1, _num2) => _num1 + _num2; // Lambda Functions
+
+var respOfSum = sum(10, 25);
+console.log("🚀 ~ respOfSum:", respOfSum);
+
+// ceil, floor, round
+// ceiling, floor
+
+var diceNum = Math.random();
+console.log("🚀 ~ diceNum:", diceNum);
+
+var userResp = Number(prompt("Enter First Number"));
+console.log("🚀 ~ userResp:", userResp);
+var userResp2 = Number(prompt("Enter 2nd Number"));
+console.log("🚀 ~ userResp2:", userResp2);
+
+const sumWithButton = () => {
+  console.log(userResp + userResp2);
+};
+
+const cosWithButton = () => {
+  console.log(Math.cos(userResp));
+};
