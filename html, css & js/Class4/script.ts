@@ -56,27 +56,27 @@ function printCustomValue(str1: string) {
   console.log(str1);
 }
 
-printCustomValue("Abu Hurairah is a friend of Waseem");
-printCustomValue("I'll be going to dinner");
-printCustomValue("I'm resting at home");
-printCustomValue("It is very cold outside");
+// printCustomValue("Abu Hurairah is a friend of Waseem");
+// printCustomValue("I'll be going to dinner");
+// printCustomValue("I'm resting at home");
+// printCustomValue("It is very cold outside");
 
 function sum2(num1: number, num2: number) {
   console.log(num1 + num2);
 }
 
-sum2(10, 20);
-sum2(3, 5);
-sum2(4, 5);
-sum2(410, 5);
+// sum2(10, 20);
+// sum2(3, 5);
+// sum2(4, 5);
+// sum2(410, 5);
 
 // Default Parametes
 function names(lastName: string, firstName: string = "Muhammad") {
   console.log(firstName, lastName);
 }
 
-names("Ali");
-names("Ali", "Ahmad");
+// names("Ali");
+// names("Ali", "Ahmad");
 
 // Optional Parameters
 function names2(firstName: string, lastName: string, middleName?: string) {
@@ -88,5 +88,20 @@ function names2(firstName: string, lastName: string, middleName?: string) {
   }
 }
 
-names2("Muhammad", "Siddique", "Abu Bakar"); // argument
-names2("Abu", "Hurairah");
+// names2("Muhammad", "Siddique", "Abu Bakar"); // argument
+// names2("Abu", "Hurairah");
+
+var _name = "Abu Hurairah";
+_name = _name.toUpperCase();
+console.log(_name);
+console.log(_name.charAt(2));
+console.log(_name.indexOf("A"));
+console.log(_name.lastIndexOf("A"));
+console.log(_name.includes("ABU"));
+console.log(_name.concat(" Shafique"));
+console.log(_name.length);
+var str2 = "             Abu Hurairah               ";
+console.log(str2);
+console.log(str2.trim());
+console.log(str2);
+console.log(_name.replace("ABU", "MUHAMMAD"));
